@@ -8,10 +8,301 @@ import "../styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ICME2025 Workshop</title>
+    <title>EVPU 2026 - Event-Based Visual Perception and Understanding Workshop</title>
+    <meta name="description" content="ICME2026 Workshop on Event-Based Visual Perception and Understanding" />
   </head>
-  <body>
-    <h1>ICME2025 Workshop</h1>
-    <p>WIP...</p>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="shrink-0 font-bold text-xl text-blue-600">
+            EVPU 2026
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+            <a href="#topics" class="text-gray-700 hover:text-blue-600 transition">Topics</a>
+            <a href="#dates" class="text-gray-700 hover:text-blue-600 transition">Important Dates</a>
+            <a href="#organizers" class="text-gray-700 hover:text-blue-600 transition">Organizers</a>
+            <a href="#keynotes" class="text-gray-700 hover:text-blue-600 transition">Keynotes</a>
+            <a href="#program" class="text-gray-700 hover:text-blue-600 transition">Program</a>
+            <a href="#submission" class="text-gray-700 hover:text-blue-600 transition">Submission</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-linear-to-br from-blue-600 to-blue-800 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Event-Based Visual Perception and Understanding
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-blue-100">
+          ICME 2026 Workshop
+        </p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-lg">
+          <div class="flex items-center gap-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>[Date TBD], 2026</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span>[Location TBD]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">About the Workshop</h2>
+        <div class="prose prose-lg max-w-4xl mx-auto text-gray-700 leading-relaxed">
+          <p class="mb-6">
+            Event-based vision is emerging as a transformative paradigm for visual sensing, offering microsecond latency, high dynamic range, and ultra-low power consumption, while conventional image and video sensing remains the cornerstone of modern computer vision and multimedia analysis. Exploring both pure event-based vision and its combination with traditional image/video methods is crucial for tackling fast motion, high-contrast scenes, low-light environments, and resource-constrained platforms, despite the challenges posed by the asynchronous, sparse nature of event streams and the dense, synchronous structure of frames.
+          </p>
+          <p>
+            This workshop invites high-quality submissions on event-based vision and its integration with conventional vision, with a focus on novel models, algorithms, datasets, and systems for dynamic scene understanding, recognition, detection, tracking, motion analysis, and other visual tasks under realistic, high-speed, and high-dynamic-range conditions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Topics of Interest</h2>
+        <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <h3 class="font-semibold text-lg mb-2 text-blue-600">Event-Based Perception</h3>
+            <p class="text-gray-700">Event-based visual perception and scene understanding</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <h3 class="font-semibold text-lg mb-2 text-blue-600">Foundation Models</h3>
+            <p class="text-gray-700">Foundation models for event-based vision</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <h3 class="font-semibold text-lg mb-2 text-blue-600">Data Processing</h3>
+            <p class="text-gray-700">Event data representation, denoising, and spatio-temporal modeling</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <h3 class="font-semibold text-lg mb-2 text-blue-600">Visual Tasks</h3>
+            <p class="text-gray-700">Event-based recognition, detection, tracking, motion estimation</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <h3 class="font-semibold text-lg mb-2 text-blue-600">Reconstruction & Enhancement</h3>
+            <p class="text-gray-700">Event-based reconstruction, enhancement, and recovery</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <h3 class="font-semibold text-lg mb-2 text-blue-600">Neuromorphic Systems</h3>
+            <p class="text-gray-700">Neuromorphic vision systems and hardware-algorithm co-design</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <h3 class="font-semibold text-lg mb-2 text-blue-600">Benchmarks & Datasets</h3>
+            <p class="text-gray-700">Benchmarks, datasets, metrics, and evaluation protocols for event-based vision</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <h3 class="font-semibold text-lg mb-2 text-blue-600">Applications</h3>
+            <p class="text-gray-700">Real-world applications in autonomous driving, robotics, surveillance, and beyond</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Important Dates Section -->
+    <section id="dates" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Important Dates</h2>
+        <div class="max-w-2xl mx-auto">
+          <div class="space-y-6">
+            <div class="flex items-start gap-4 p-6 bg-blue-50 rounded-lg">
+              <div class="shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                1
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Workshop Paper Submission</h3>
+                <p class="text-gray-700">March 25, 2026</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-6 bg-blue-50 rounded-lg">
+              <div class="shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                2
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Workshop Paper Notification</h3>
+                <p class="text-gray-700">April 25, 2026</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-6 bg-blue-50 rounded-lg">
+              <div class="shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                3
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Workshop Paper Camera Ready</h3>
+                <p class="text-gray-700">May 15, 2026</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-6 bg-linear-to-r from-blue-600 to-blue-700 text-white rounded-lg">
+              <div class="shrink-0 w-12 h-12 bg-white text-blue-600 rounded-full flex items-center justify-center font-bold">
+                4
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Workshop Date</h3>
+                <p class="text-blue-100">[Date TBD], 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keynote Speakers Section (Placeholder) -->
+    <section id="keynotes" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Keynote Speakers</h2>
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="bg-white p-12 rounded-lg shadow-sm border-2 border-dashed border-gray-300">
+            <svg class="w-16 h-16 mx-auto mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+            <h3 class="text-xl font-semibold mb-2 text-gray-700">Keynote Speakers Coming Soon</h3>
+            <p class="text-gray-600">We are excited to announce our distinguished keynote speakers. Stay tuned for updates!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Schedule Section (Placeholder) -->
+    <section id="program" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Program Schedule</h2>
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="bg-gray-50 p-12 rounded-lg shadow-sm border-2 border-dashed border-gray-300">
+            <svg class="w-16 h-16 mx-auto mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h3 class="text-xl font-semibold mb-2 text-gray-700">Program Schedule To Be Announced</h3>
+            <p class="text-gray-600">The detailed workshop program will be published closer to the event date.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accepted Papers Section (Placeholder) -->
+    <section id="papers" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Accepted Papers</h2>
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="bg-white p-12 rounded-lg shadow-sm border-2 border-dashed border-gray-300">
+            <svg class="w-16 h-16 mx-auto mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <h3 class="text-xl font-semibold mb-2 text-gray-700">Accepted Papers Will Be Listed Here</h3>
+            <p class="text-gray-600">After the review process, accepted papers will be listed on this page.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Workshop Organizers</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="text-center">
+            <div class="w-32 h-32 mx-auto mb-4 bg-linear-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">
+              JW
+            </div>
+            <h3 class="font-semibold text-lg mb-1">Jinjian Wu</h3>
+            <p class="text-gray-600">Xidian University, China</p>
+          </div>
+          <div class="text-center">
+            <div class="w-32 h-32 mx-auto mb-4 bg-linear-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">
+              YW
+            </div>
+            <h3 class="font-semibold text-lg mb-1">Yang Wang</h3>
+            <p class="text-gray-600">Chang'an University, China</p>
+          </div>
+          <div class="text-center">
+            <div class="w-32 h-32 mx-auto mb-4 bg-linear-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">
+              RZ
+            </div>
+            <h3 class="font-semibold text-lg mb-1">Rui Zhao</h3>
+            <p class="text-gray-600">Nanyang Technological University, Singapore</p>
+          </div>
+          <div class="text-center">
+            <div class="w-32 h-32 mx-auto mb-4 bg-linear-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">
+              CZ
+            </div>
+            <h3 class="font-semibold text-lg mb-1">Chu Zhou</h3>
+            <p class="text-gray-600">National Institute of Informatics, Japan</p>
+          </div>
+          <div class="text-center">
+            <div class="w-32 h-32 mx-auto mb-4 bg-linear-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">
+              WY
+            </div>
+            <h3 class="font-semibold text-lg mb-1">Wen Yang</h3>
+            <p class="text-gray-600">Xidian University, China</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Submission Section -->
+    <section id="submission" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Call for Papers</h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-8">
+            <h3 class="text-2xl font-semibold mb-4">Submission Guidelines</h3>
+            <div class="prose text-gray-700 space-y-4">
+              <p>
+                We invite researchers to submit original, high-quality papers on event-based vision and its integration with conventional vision approaches.
+              </p>
+              <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600 my-6">
+                <h4 class="font-semibold mb-2 text-blue-900">Submission Details</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li><strong>Format:</strong> [To be announced - follow ICME2026 workshop paper format]</li>
+                  <li><strong>Page limit:</strong> [To be announced]</li>
+                  <li><strong>Submission system:</strong> [Link to be provided]</li>
+                  <li><strong>Review process:</strong> [Double-blind review / Single-blind review - TBD]</li>
+                </ul>
+              </div>
+              <p>
+                <strong>Note:</strong> All submissions will be peer-reviewed. Accepted papers will be included in the workshop proceedings.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="#" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition shadow-lg">
+              Submit Your Paper
+              <span class="ml-2">→</span>
+            </a>
+            <p class="mt-4 text-gray-600">Submission system will open soon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h3 class="text-2xl font-bold text-white mb-4">EVPU 2026</h3>
+          <p class="mb-4">Event-Based Visual Perception and Understanding</p>
+          <p class="text-gray-400 text-sm">ICME2026 Workshop</p>
+          <div class="mt-8 pt-8 border-t border-gray-800 text-gray-500 text-sm">
+            <p>&copy; 2026 EVPU Workshop. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
